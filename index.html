@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: 'Oddval';
+            src: url(Oddval-SemiBold.ttf);
+        }
+        body {
+            font-family: 'Oddval', Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;   
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .bg {
+            width: 100vw;
+            height: 100vh;
+            background: #000;
+            mix-blend-mode: hard-light;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 20px;
+            gap: 10px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .word {
+            font-size: 72px;
+            font-weight: bold;
+            white-space: nowrap; 
+            color: #fff;
+            background: #000;
+        }
+        .box {
+            flex-grow: 1;
+            min-width: 80px;
+            height: 60px;
+            background-color: #686868;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="container">
+            <span class="word">We're</span>
+            <span class="word">here</span>
+            <div class="box"></div>
+            <span class="word">to</span>
+            <span class="word">make</span>
+            <span class="word">healthy</span>
+            <div class="box"></div>
+            <span class="word">living</span>
+            <span class="word">effortless,</span>
+            <span class="word">so</span>
+            <span class="word">you</span>
+            <span class="word">can</span>
+            <div class="box"></div>
+            <span class="word">live</span>
+            <span class="word">longer</span>
+            <span class="word">and</span>
+            <span class="word">happier</span>
+            <div class="box"></div>
+        </div>
+    </div>
+
+    <video class="background-video" autoplay loop muted>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+</body>
+</html>
